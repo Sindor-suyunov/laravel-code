@@ -12,9 +12,9 @@
         }
     ],
     "require": {
-        "php": "^8.0",
-        "livewire/livewire": "^2.0",
-        "laravel/framework": "^10"
+        "php": ">=8.0",
+        "livewire/livewire": ">=2.0",
+        "laravel/framework": ">=10"
     },
     "autoload": {
         "psr-4": {
