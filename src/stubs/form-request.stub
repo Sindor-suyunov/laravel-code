@@ -1,0 +1,17 @@
+<?php
+
+namespace $NAMESPACE$;
+
+class $CLASS_NAME$ extends $PARENT_CLASS$
+{
+    public function rules(): array
+    {
+        return [$RULES$
+        ];
+    }
+
+    public function authorize(): bool
+    {
+        return true;
+    }
+}

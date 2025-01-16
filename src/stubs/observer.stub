@@ -1,0 +1,28 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use $MODEL_NAMESPACE$\$MODEL_NAME$;
+
+class $CLASS_NAME$
+{
+    public function created($MODEL_NAME$ $$VARIABLE$): void
+    {
+        //
+    }
+
+    public function updated($MODEL_NAME$ $$VARIABLE$): void
+    {
+        //
+    }
+
+    public function deleted($MODEL_NAME$ $$VARIABLE$): void
+    {
+        //
+    }
+
+    public function restored($MODEL_NAME$ $$VARIABLE$): void
+    {
+        //
+    }
+}

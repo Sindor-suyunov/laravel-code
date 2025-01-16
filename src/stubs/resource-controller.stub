@@ -1,0 +1,47 @@
+<?php
+
+namespace $NAMESPACE$;
+
+$USES$
+
+class $CLASS_NAME$ extends $PARENT_CLASS$
+{
+    public function index()
+    {
+        $$VARIABLE_PLURAL$ = $MODEL_NAME$::paginate();
+        return view('$VARIABLE_PLURAL$.index', compact('$VARIABLE_PLURAL$'));
+    }
+
+    public function create()
+    {
+        return view('$VARIABLE_PLURAL$.create');
+    }
+
+    public function show($MODEL_NAME$ $$VARIABLE_SINGULAR$)
+    {
+        return view('$VARIABLE_PLURAL$.show', compact('$VARIABLE_SINGULAR$'));
+    }
+
+    public function edit($MODEL_NAME$ $$VARIABLE_SINGULAR$)
+    {
+        return view('$VARIABLE_PLURAL$.edit', compact('$VARIABLE_SINGULAR$'));
+    }
+
+    public function store($REQUEST_NAME$ $request)
+    {
+        $$VARIABLE_SINGULAR$ = $MODEL_NAME$::create($request->validated());
+        return redirect()->action([$this, 'show'], compact('$VARIABLE_SINGULAR$'));
+    }
+
+    public function update($REQUEST_NAME$ $request, $MODEL_NAME$ $$VARIABLE_SINGULAR$)
+    {
+        $$VARIABLE_SINGULAR$->update($request->validated());
+        return redirect()->action([$this, 'show'], compact('$VARIABLE_SINGULAR$'));
+    }
+
+    public function destroy($MODEL_NAME$ $$VARIABLE_SINGULAR$)
+    {
+        $$VARIABLE_SINGULAR$->delete();
+        return redirect()->action([$this, 'index']);
+    }
+}

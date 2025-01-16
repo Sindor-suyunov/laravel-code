@@ -1,0 +1,17 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use $MODEL_NAMESPACE$\$MODEL_NAME$;
+
+class $CLASS_NAME$ extends Factory
+{
+    protected $model = $MODEL_NAME$::class;
+
+    public function definition(): array
+    {
+        return [  $FIELDS$
+        ];
+    }
+}

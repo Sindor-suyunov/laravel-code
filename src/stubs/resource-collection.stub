@@ -1,0 +1,17 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\ResourceCollection;
+
+/** @see $MODEL_NAMESPACE$\$MODEL_NAME$ */
+class $CLASS_NAME$ extends ResourceCollection
+{
+    public function toArray(Request $request): array
+    {
+        return [
+            'data' => $this->collection,
+        ];
+    }
+}

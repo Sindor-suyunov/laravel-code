@@ -1,0 +1,31 @@
+{
+    "name": "sindor/laravel-code",
+    "description": "Laravel Code Generator",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Sindor Suyunov",
+            "email": "sindorsuyunov92@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "livewire/livewire": "^2.0",
+        "laravel/framework": "^10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sindor\\LaravelCode\\": "src/",
+            "Sindor\\LaravelCode\\App\\": "src/app/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sindor\\LaravelCode\\PackageServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,36 @@
+<?php
+
+namespace $NAMESPACE$;
+
+$USES$
+
+class $CLASS_NAME$ extends $PARENT_CLASS$
+{
+    public function index()
+    {
+        return response()->json($MODEL_NAME$::all());
+    }
+
+    public function show($MODEL_NAME$ $$VARIABLE$)
+    {
+        return response()->json($$VARIABLE$);
+    }
+
+    public function store($REQUEST_NAME$ $request)
+    {
+        $$VARIABLE$ = $MODEL_NAME$::create($request->validated());
+        return response()->json($$VARIABLE$, 201);
+    }
+
+    public function update($REQUEST_NAME$ $request, $MODEL_NAME$ $$VARIABLE$)
+    {
+        $$VARIABLE$->update($request->validated());
+        return response()->json($$VARIABLE$);
+    }
+
+    public function destroy($MODEL_NAME$ $$VARIABLE$)
+    {
+        $$VARIABLE$->delete();
+        return response()->json(null, 204);
+    }
+}
