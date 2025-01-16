@@ -1,9 +1,10 @@
 {
     "name": "sindor/laravel-code",
+    "keywords": ["laravel","laravel-code","sindor-laravel","sindor-code","code","code generator","generator","easy-code"],
     "description": "Laravel Code Generator",
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "license": "proprietary",
+    "license": "MIT",
     "authors": [
         {
             "name": "Sindor Suyunov",
